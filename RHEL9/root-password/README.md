@@ -60,4 +60,45 @@ Removed /etc/systemd/system/sysinit.target.wants/debug-shell.service.
 
 </pre>
 
+<pre> 
+<h1>Verify /etc/fstab error using findmnt --verify</h1> 
+
+
+<b>[root@rhel9 root-password]# findmnt --verify</b>
+/boot
+   [E] unreachable on boot required source: UUID=$$e628c1a6-1984-431f-8300-bbbc631418f7
+
+0 parse errors, 1 error, 0 warnings
+[root@rhel9 root-password]#
+
+[root@rhel9 root-password]# findmnt --verify
+none
+   [E] unreachable on boot required target: No such file or directory
+   [W] swa seems unsupported by the current kernel
+   [E] swa does not match with on-disk swap
+
+0 parse errors, 2 errors, 1 warning
+[root@rhel9 root-password]# cat /etc/fstab
+
+#
+# /etc/fstab
+# Created by anaconda on Tue Aug  9 06:32:22 2022
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/rhel-root   /                       xfs     defaults        0 0
+UUID=e628c1a6-1984-431f-8300-bbbc631418f7 /boot                   xfs     defaults        0 0
+/dev/mapper/rhel-home   /home                   xfs     defaults        0 0
+/dev/mapper/rhel-swap   none                    swa    defaults        0 0
+
+[root@rhel9 root-password]# vim /etc/fstab
+[root@rhel9 root-password]# findmnt --verify
+Success, no errors or warnings detected
+</pre>
+
+
 
