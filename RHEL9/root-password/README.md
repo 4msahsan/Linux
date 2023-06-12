@@ -1,5 +1,5 @@
 <pre>
-change root password on RHEL9
+<b>change root password on RHEL9</b>
 mount -o remount,rw /
 passwd root
 touch ./autorelabel (for selinux)
