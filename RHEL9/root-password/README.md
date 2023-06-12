@@ -14,13 +14,13 @@ exec /usr/lib/systemd/systemd
 ![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw01.png "msahsan@hotmail.com")
 
 <pre>
-<b> Debug Shell for troubleshooting</b>
+<h1><b> Debug Shell for troubleshooting</h1></b>
 
 
 
 </pre>
 <pre>
-<b>DebugShell gain root access without passw<ord</b>
+<b>DebugShell gain root access without password</b>
 
 enable debug shell
 
