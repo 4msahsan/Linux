@@ -101,7 +101,7 @@ Success, no errors or warnings detected
 </pre>
 
 
-<b> <Top Command> </b>
+<h1> <Top Command> </h1>
 <pre>
 top - 15:38:12 up  4:07,  1 user,  load average: 0.00, 0.00, 0.00
 Tasks: 131 total,   1 running, 130 sleeping,   0 stopped,   0 zombie
@@ -115,7 +115,7 @@ MiB Swap:   4044.0 total,   4044.0 free,      0.0 used.   9113.4 avail Mem
       1 root      20   0  104368  13848   9380 S   0.0   0.1   0:02.00 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
 </pre>
-
+<pre>
 [root@rhel9 root-password]# while true; do true; done &
 [1] 4946
 [root@rhel9 root-password]# while true; do true; done &
@@ -125,6 +125,7 @@ MiB Swap:   4044.0 total,   4044.0 free,      0.0 used.   9113.4 avail Mem
 [root@rhel9 root-password]# while true; do true; done &
 [4] 4949
 [root@rhel9 root-password]#
+</pre>
 <pre>
 top - 15:39:48 up  4:09,  1 user,  load average: 2.03, 0.53, 0.18
 Tasks: 135 total,   5 running, 130 sleeping,   0 stopped,   0 zombie
