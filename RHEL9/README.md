@@ -6,12 +6,12 @@ touch ./autorelabel (for selinux)
 exec /usr/lib/systemd/systemd
 </pre>
 
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw02.png "msahsan@hotmail.com")
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw03.png "msahsan@hotmail.com")
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw04.png "msahsan@hotmail.com")
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw05.png "msahsan@hotmail.com")
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw06.png "msahsan@hotmail.com")
-![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw01.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw02.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw03.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw04.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw05.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw06.png "msahsan@hotmail.com")
+![Alt text](https://github.com/4msahsan/Linux/blob/main/RHEL9/png/rootpw01.png "msahsan@hotmail.com")
 
 <pre>
 <h1><b> Debug Shell for troubleshooting</h1></b>
@@ -101,7 +101,7 @@ Success, no errors or warnings detected
 </pre>
 
 
-<pre>
+<b> <Top Command> </b>
 top - 15:38:12 up  4:07,  1 user,  load average: 0.00, 0.00, 0.00
 Tasks: 131 total,   1 running, 130 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.2 us,  0.2 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.2 hi,  0.0 si,  0.0 st
