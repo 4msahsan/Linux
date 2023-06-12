@@ -101,4 +101,53 @@ Success, no errors or warnings detected
 </pre>
 
 
+<pre>
+top - 15:38:12 up  4:07,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 131 total,   1 running, 130 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.2 us,  0.2 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.2 hi,  0.0 si,  0.0 st
+MiB Mem :   9563.1 total,   9032.8 free,    204.4 used,    325.9 buff/cache
+MiB Swap:   4044.0 total,   4044.0 free,      0.0 used.   9113.4 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4943 root      20   0       0      0      0 I   0.3   0.0   0:00.12 kworker/1:2-ata_sff
+   4944 root      20   0   10552   4056   3316 R   0.3   0.0   0:00.08 top
+      1 root      20   0  104368  13848   9380 S   0.0   0.1   0:02.00 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+
+[root@rhel9 root-password]# while true; do true; done &
+[1] 4946
+[root@rhel9 root-password]# while true; do true; done &
+[2] 4947
+[root@rhel9 root-password]# while true; do true; done &
+[3] 4948
+[root@rhel9 root-password]# while true; do true; done &
+[4] 4949
+[root@rhel9 root-password]#
+
+top - 15:39:48 up  4:09,  1 user,  load average: 2.03, 0.53, 0.18
+Tasks: 135 total,   5 running, 130 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 98.5 us,  0.3 sy,  0.0 ni,  0.0 id,  0.0 wa,  1.2 hi,  0.0 si,  0.0 st
+MiB Mem :   9563.1 total,   9031.1 free,    206.1 used,    325.9 buff/cache
+MiB Swap:   4044.0 total,   4044.0 free,      0.0 used.   9111.7 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4946 root      20   0    8944   2204      0 R  45.7   0.0   0:21.10 bash
+   4949 root      20   0    8944   3520   1316 R  45.7   0.0   0:18.48 bash
+   4947 root      20   0    8944   3520   1316 R  45.3   0.0   0:19.58 bash
+   4948 root      20   0    8944   2204      0 R  45.3   0.0   0:18.87 bash
+   4945 root      20   0       0      0      0 I   0.3   0.0   0:00.02 kworker/1:1-ata_sff
+   4950 root      20   0   10552   4284   3544 R   0.3   0.0   0:00.02 top
+      1 root      20   0  104368  13848   9380 S   0.0   0.1   0:02.00 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rc
+	 
+	 sleeping 0.0 id system taking 100 resources
+	 
+
+
+</pre>
 
