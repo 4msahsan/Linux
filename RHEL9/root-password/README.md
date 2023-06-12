@@ -5,7 +5,7 @@ passwd root
 touch ./autorelabel (for selinux)
 exec /usr/lib/systemd/systemd
 
-![Alt text] (https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw02.PNG "msahsan@hotmail.com")
+![Alt text] (https://github.com/4msahsan/Linux/blob/main/RHEL9/root-password/png/rootpw02.png "msahsan@hotmail.com")
 
 </pre>
 
